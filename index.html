@@ -10,8 +10,9 @@
 </head>
 
 <body>
-    <main class="flex w-[83vw] h-[100vh] overflow-hidden mx-auto">
-        <div class="first w-[50%]">
+    <main class="flex w-full h-[100vh]  mx-auto xl:w-[83vw]">
+        <div
+            class="first flex flex-col items-end h-full overflow-y-auto w-[20%] xl:w-[50%] xl:items-start xl:justify-center">
             <div class="logo my-2 hover:bg-[#e7e7e8] w-fit p-3 rounded-full">
 
                 <svg viewBox="0 0 24 24" aria-hidden="true"
@@ -30,25 +31,25 @@
                         <span class="material-symbols-outlined !text-3xl">
                             home
                         </span>
-                        Home
+                        <span class="hidden xl:block">Home</span>
                     </li>
                     <li class="flex items-center w-fit rounded-full px-2 py-1 cursor-pointer gap-3 hover:bg-[#e7e7e8] ">
                         <span class="material-symbols-outlined !text-3xl">
                             search
                         </span>
-                        Explore
+                        <span class="hidden xl:block">Explore</span>
                     </li>
                     <li class="flex items-center w-fit rounded-full px-2 py-1 cursor-pointer gap-3 hover:bg-[#e7e7e8] ">
                         <span class="material-symbols-outlined !text-3xl">
                             notifications
                         </span>
-                        Notifications
+                        <span class="hidden xl:block">Notifications</span>
                     </li>
                     <li class="flex items-center w-fit rounded-full px-2 py-1 cursor-pointer gap-3 hover:bg-[#e7e7e8] ">
                         <span class="material-symbols-outlined !text-3xl">
                             mail
                         </span>
-                        Messages
+                        <span class="hidden xl:block">Messages</span>
                     </li>
                     <li class="flex items-center w-fit rounded-full px-2 py-1 cursor-pointer gap-3 hover:bg-[#e7e7e8] ">
                         <svg viewBox="0 0 33 32" aria-hidden="true"
@@ -59,13 +60,13 @@
                                 </path>
                             </g>
                         </svg>
-                        Grok
+                        <span class="hidden xl:block">Grok</span>
                     </li>
                     <li class="flex items-center w-fit rounded-full px-2 py-1 cursor-pointer gap-3 hover:bg-[#e7e7e8] ">
                         <span class="material-symbols-outlined !text-3xl">
                             group
                         </span>
-                        Communities
+                        <span class="hidden xl:block">Communities</span>
                     </li>
                     <li class="flex items-center w-fit rounded-full px-2 py-1 cursor-pointer gap-3 hover:bg-[#e7e7e8] ">
                         <svg viewBox="0 0 24 24" aria-hidden="true"
@@ -76,46 +77,49 @@
                                 </path>
                             </g>
                         </svg>
-                        Premium
+                        <span class="hidden xl:block">Premium</span>
                     </li>
                     <li class="flex items-center w-fit rounded-full px-2 py-1 cursor-pointer gap-3 hover:bg-[#e7e7e8] ">
                         <span class="material-symbols-outlined !text-3xl">
                             account_circle
                         </span>
-                        Profile
+                        <span class="hidden xl:block">Profile</span>
                     </li>
                     <li class="flex items-center w-fit rounded-full px-2 py-1 cursor-pointer gap-3 hover:bg-[#e7e7e8] ">
                         <span class="material-symbols-outlined !text-3xl">
                             more
                         </span>
-                        More
+                        <span class="hidden xl:block">More</span>
                     </li>
                 </ul>
             </div>
 
-            <div class="postButton w-full mt-3 mb-8">
+            <div class="hidden xl:block postButton w-full mt-3 mb-8">
                 <button class="bg-black text-white rounded-full w-[80%] py-4 font-bold cursor-pointer">Post</button>
             </div>
 
 
-            <div class="profile hover:bg-[#e7e7e8] w-fit rounded-full px-2 py-1 cursor-pointer flex items-center gap-3">
+            <div class="profile hover:bg-[#e7e7e8] w-fit rounded-full px-2 py-1 cursor-pointer gap-3  items-center flex">
                 <img class="w-10 rounded-full" src="assets/img/cropped-image.png" alt="">
-                <div>
-                    <div class="name">
-                        Muhammad Ahmed
+                <div class="hidden xl:flex items-center gap-3">
+                    <div >
+                        <div class="name">
+                            Muhammad Ahmed
+                        </div>
+                        <div class="username text-gray-500">
+                            @_mahmed_02
+                        </div>
                     </div>
-                    <div class="username text-gray-500">
-                        @_mahmed_02
-                    </div>
+                    <span class="material-symbols-outlined ">
+                        more_horiz
+                    </span>
                 </div>
-                <span class="material-symbols-outlined">
-                    more_horiz
-                </span>
+
             </div>
 
         </div>
         <!-- This is the second container -->
-        <div class="second w-full border border-x-[#e7e7e8] border-y-transparent ">
+        <div class="second w-[80%] md:w-[60%] border border-x-[#e7e7e8] border-y-transparent">
 
             <div class="head flex h-[8%] cursor-pointer relative">
                 <div class="bar bg-[#1d9bf0] h-1 w-12 absolute bottom-0  left-[21%] rounded-full z-10"></div>
@@ -127,9 +131,9 @@
                 </div>
             </div>
 
-            <div class="body overflow-y-scroll h-[92%]">
+            <div class="body h-[92%] overflow-y-auto">
 
-                <div class="whatsHappening border border-y-[#e7e7e8] border-x-transparent flex py-3 h-fit">
+                <div class="whatsHappening border border-y-[#e7e7e8] border-x-transparent  py-3 h-fit hidden sm:flex">
                     <div class="img w-[10%] flex items-start justify-center">
                         <img class="w-10 rounded-full" src="assets/img/cropped-image.png" alt="">
                     </div>
@@ -246,7 +250,7 @@
                                 src="https://pbs.twimg.com/profile_images/1404378291599937536/b-r3SWlW_400x400.jpg"
                                 alt="">
                         </div>
-                        <div class="postContent w-[90%] flex flex-col gap-3">
+                        <div class="postContent w-[80%] flex flex-col gap-3">
                             <div class="username flex items-center">
                                 ICC <span class="text-gray-500"> @ICC · 16h</span>
                             </div>
@@ -314,7 +318,7 @@
                                 </div>
                                 <div class="flex items-cente gap-1">
                                     <svg viewBox="0 0 24 24" aria-hidden="true"
-                                        class="w-5 r-4qtqp9 r-yyyyoo r-dnmrzs r-bnwqim r-lrvibr r-m6rgpd r-1xvli5t r-1hdv0qi">
+                                        class="hidden sm:inline w-5 r-4qtqp9 r-yyyyoo r-dnmrzs r-bnwqim r-lrvibr r-m6rgpd r-1xvli5t r-1hdv0qi">
                                         <g>
                                             <path
                                                 d="M8.75 21V3h2v18h-2zM18 21V8.5h2V21h-2zM4 21l.004-10h2L6 21H4zm9.248 0v-7h2v7h-2z">
@@ -343,7 +347,7 @@
                                 src="https://pbs.twimg.com/profile_images/1906323222687010817/HpQnHYxD_400x400.jpg"
                                 alt="">
                         </div>
-                        <div class="postContent w-[90%] flex flex-col gap-3">
+                        <div class="postContent w-[80%] flex flex-col gap-3">
                             <div class="username flex items-center">
                                 junaiz
                                 <span class="text-gray-500"> @dhillow_
@@ -351,7 +355,8 @@
                                     12h</span>
                             </div>
                             <div class="postdisc">
-                                📢 There is no possibility of Babar Azam and Mohammad Rizwan returning for the Asia Cup and the Tri series ( Geo Super)
+                                📢 There is no possibility of Babar Azam and Mohammad Rizwan returning for the Asia Cup
+                                and the Tri series ( Geo Super)
 
                             </div>
                             <div class="post">
@@ -413,7 +418,7 @@
                                 </div>
                                 <div class="flex items-cente gap-1">
                                     <svg viewBox="0 0 24 24" aria-hidden="true"
-                                        class="w-5 r-4qtqp9 r-yyyyoo r-dnmrzs r-bnwqim r-lrvibr r-m6rgpd r-1xvli5t r-1hdv0qi">
+                                        class="hidden sm:inline w-5 r-4qtqp9 r-yyyyoo r-dnmrzs r-bnwqim r-lrvibr r-m6rgpd r-1xvli5t r-1hdv0qi">
                                         <g>
                                             <path
                                                 d="M8.75 21V3h2v18h-2zM18 21V8.5h2V21h-2zM4 21l.004-10h2L6 21H4zm9.248 0v-7h2v7h-2z">
@@ -440,7 +445,7 @@
         </div>
 
         <!-- This is thrid container -->
-        <div class="third w-[60%]">
+        <div class="third w-[60%] hidden lg:block">
             <!-- This is search -->
             <div class="head">
                 <div
@@ -452,7 +457,7 @@
                 </div>
             </div>
             <!-- this is body -->
-            <div class="body px-5 h-[92%]  overflow-y-auto">
+            <div class="body px-5 h-fit  overflow-y-auto">
                 <!-- this is premium card -->
                 <div class="premium flex flex-col gap-3 border-2 border-[#e7e7e8] rounded-xl p-3 mt-3">
                     <h3 class="text-xl font-bold">
